@@ -1,0 +1,22 @@
+name: CI Pipeline
+
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install selenium
+          pip install unittest-xml-reporting  # valfritt för rapporter
+
+      - name: Run tests
+        run: python -m unittest discover -s tests
