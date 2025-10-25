@@ -9,7 +9,7 @@ try:
     driver.get("https://www.saucedemo.com/")
 
     # 2. Ange användarnamn och lösenord
-    driver.find_element(By.ID, "user-name").send_keys("stanggg_user")
+    driver.find_element(By.ID, "user-name").send_keys("standard_user")
     driver.find_element(By.ID, "password").send_keys("secret_sauce")
 
     # 3. Klicka på login
@@ -26,3 +26,4 @@ try:
 
 finally:
     driver.quit()
+
