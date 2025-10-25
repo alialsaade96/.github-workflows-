@@ -16,5 +16,5 @@ Tester är skrivna i **Python** med **Selenium WebDriver** och körs automatiskt
 ### Installation
 1. Klona detta repo:
    ```bash
-   git clone https://github.com/<ditt-användarnamn>/saucedemo-tests.git
+   git clone https://github.com/<alialsaade96>/saucedemo-tests.git
    cd saucedemo-tests
